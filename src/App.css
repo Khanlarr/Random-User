@@ -1,0 +1,108 @@
+.randomuser{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.k{
+  height: 50vh;
+  background-color: #2c2e31;
+}
+.randomuser div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.4rem;
+  background-color: white;
+  width: 45rem;
+  height: 27rem;
+  letter-spacing: 1.5px;
+  transition: all 0.3s linear;
+}
+.randomuser div img{
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-top: -6rem;
+  box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+  z-index: 100;
+}
+.randomuser div p{
+font-size: 1rem;
+}
+.randomuser div h1{
+font-weight: 500;
+font-size: 2rem;
+margin-top: -0.3rem;
+}
+.randomuser div ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+ width: 100%;
+ margin-top: -0.3rem;
+}
+.randomuser div button{
+  color: white;
+  border: none;
+  background-color: #49a6e9;
+  letter-spacing: 1.5px;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 0.5rem 0.7rem; 
+  cursor: pointer;
+}
+.randomuser div ul li button{
+   border: none;
+   background-color: transparent;
+   font-size: 2rem;
+   color: #2c2e31; 
+}
+.active{
+  transition: all 0.3s linear;
+}
+.active:hover{
+ color: #49a6e9;
+}
+.loading{
+  margin-bottom:2rem;
+  transition: all 0.3s linear;
+}
+.loading:hover{
+  background-color: #185988;
+}
+.header{
+  background-color: hsl(210, 36%, 96%);
+  height: 20rem;
+  border-radius: 0.4rem 0.4rem 0 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+}
+@media only screen and (max-width:800px){
+  .randomuser div{
+    width: 92vw;
+    height: 25rem;
+  }
+  .randomuser div ul li button{
+    font-size: 1.5rem;
+    
+  }
+  .randomuser div h1{
+    font-size: 1.8rem;
+  }
+  .randomuser div ul{
+    margin-right: 1.2rem;
+  }
+}
+@media only screen and (max-width:500px){
+  .randomuser div h1{
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width:280px){
+  .randomuser div h1{
+    font-size: 0.85rem;
+  }
+}
